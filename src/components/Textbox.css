@@ -1,0 +1,118 @@
+/* TextBox.css - 정리된 최종 버전 */
+
+.textbox {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.textbox-container {  
+  display: flex;
+  width: 100%;
+  /* max-width: 385px; */
+  height: 450px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: #eddbf0;
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
+  font-weight: 500;
+}
+
+.textbox-container.focused {
+  background: #FFF;
+  border: 1px solid #555;
+}
+
+.textbox-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 165%; */
+  height: 100%;
+  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  /* box-sizing: border-box; */
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+  outline: none;
+}
+
+.textbox-area.focused {
+  border: 1px solid #642F6C;
+}
+
+.textbox-area.loading {
+  color: #aaa;
+  font-style: italic;
+}
+
+
+.textbox-area::placeholder {
+  font-family: 'Pretendard-Regular';
+  font-size: 14px;
+  color: #aaa;
+}
+
+.char-count {
+  font-size: 12px;
+  color: #555;
+  text-align: right;
+  width: 100%;
+  margin-top: 4px;
+  font-family: 'Pretendard-Regular';
+}
+
+.textarea-wrapper {
+  position: relative;
+  width: 100%;
+  flex: 1; /* ✅ 높이 자동 확보 */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none; /* 텍스트 선택 가능하게 */
+  /* border: 1px solid #555; */
+  border-radius: 6px;
+}
+
+.loading-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.loading-text {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Pretendard-Regular';
+}

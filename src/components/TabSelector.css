@@ -1,0 +1,66 @@
+/* TabSelector.css - 정리된 최종 버전 */
+
+.tab-wrapper {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  gap: 9px;
+  align-self: center;
+  border-radius: 10px;
+  background: #eddbf0;
+}
+
+.tab-background {
+  position: relative;
+  display: flex;
+  height: 32px;
+  background-color: #eddbf0;
+  border-radius: 7.5px;
+  overflow: hidden;
+}
+
+.tab-btn {
+  position: relative;
+  z-index: 1;
+  width: 83px;
+  height: 32px;
+  border-radius: 7.5px;
+  border: none;
+  font-family: 'Pretendard-Regular';
+  font-weight: 500;
+  background: transparent;
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: white;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  color: white;
+  background-color: #642F6C;
+  font-weight: 600;
+}
+
+.tab-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83px;
+  height: 32px;
+  background:#642F6C;
+  border-radius: 7.5px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.tab-highlight.left {
+  transform: translateX(0%);
+}
+
+.tab-highlight.right {
+  transform: translateX(100%);
+}

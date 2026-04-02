@@ -1,0 +1,52 @@
+/* ButtonGroup.css - 정리된 최종 버전 */
+
+.button-group {
+  display: flex;
+  padding: 10px 30px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+/* 공통 버튼 스타일 */
+.button-basic,
+.button-highlight {
+  width: 103px;
+  height: 44px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: 'Pretendard-Regular', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* 기본 버튼 */
+.button-basic {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+}
+
+.button-basic:hover {
+  border: 1px solid #642f6c;
+  background: #ECECEC;
+  color: #642f6c;
+}
+
+/* 강조 버튼 */
+.button-highlight {
+  border: 1px solid #642f6c;
+  background:#642f6c;
+  color: white;
+}
+
+.button-highlight:hover {
+  border: 1px solid #642f6c;
+  background: #642f6c;
+  font-weight: bold;
+  color: white;
+}

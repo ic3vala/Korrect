@@ -1,0 +1,10 @@
+/* Header.css */
+.header-wrapper {
+  display: flex;
+  padding: 15px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid #642f6c;
+  background: #FFF;
+}
