@@ -4,7 +4,7 @@ Korrect is a team project for Korean spelling and style correction. The service 
 
 This repository is suitable for portfolio-style documentation because it contains both the shipped web code and the project materials used to explain the system design and evaluation results.
 
-- Original repository: `<https://github.com/dakval/korrect>`
+- Original repository: `https://github.com/dakval/korrect`
 
 ## What It Does
 
