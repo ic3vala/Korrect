@@ -60,5 +60,5 @@ According to the project materials, the system reduced error rate and improved s
 
 ## Screenshots
 
-![일상용](images/Screenshot_general.png)
-![보고서용](images/Screenshot_report.png)
+![일상용](https://github.com/ic3vala/Korrect/tree/main/images/Screenshot_general.png)
+![보고서용](https://github.com/ic3vala/Korrect/tree/main/images/Screenshot_report.png)
